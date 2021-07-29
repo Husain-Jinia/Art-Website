@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from models import Art
+from .models import Art
 # Create your views here.
 
-def ArtPage(request):
+def artPage(request):
     art = Art.objects.all()
-    return render(request,'artPage.html',art)
+    return render(request,'artPage.html',{'arts':art})
