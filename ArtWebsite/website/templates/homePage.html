@@ -1,7 +1,138 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
+    <section>
+        <div class="image-hero">
+            <img  src="{% static "images/LA model 2.jpg"%}">
+        </div>
+    </section>
+    <div style="margin-top: 100px; margin-bottom: 100px;">
+        <h1 style="padding-left:20px ;align-content: center;text-align: center;color: rgb(240, 235, 235);font-style: normal; font-family:sans-serif; font-weight: 900;font-stretch: wider; word-spacing: 2px; ;letter-spacing: 3px ; font-size: 45px;object-position: center;">
+          PROJECTS</h1>
+        <hr>
+    </div> 
+    <div style="display: flex; justify-content: space-evenly; margin-bottom: 100px; color: white;">
+        <div style="width: 500px; height: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+            <img src="{% static "images/projects.jpg"%}" style=" width: 500px; height: 500px;" alt="Avatar">
+        </div>
+        <div style="width: 500px; height: 500px; display: flex; flex-direction: column; justify-content: space-between; ">
+            <img src="{% static "images/about.jpg"%}" style=" width: 500px; height: 500px; " alt="Avatar">
+        </div>
+    </div>
     
+    <div>
+        <h1 style="padding-left:20px ;align-content: center;text-align: center;color: rgb(240, 235, 235);font-style: normal; font-family:sans-serif; font-weight: 900;font-stretch: wider; word-spacing: 2px; ;letter-spacing: 3px ; font-size: 45px;object-position: center;">
+        </h1>
+     <hr>
+    </div>
+    
+    
+    <div class="facts-container-1">
+        <div class="facts-container-2">
+            <div class="facts-container-image-1">
+                <div class="image-1">
+                    <img class="image1" src="{% static "images/huain.jpg"%}" style="max-width: 500px; max-height: 500px;" alt="">
+                </div>
+                <div class="text-1 ">
+                    <div class="fact-1-header" style="margin-top: 20px;">
+                        <h2 style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; font-weight: 800; letter-spacing: 1.7px; word-spacing: 3px;">HUSAIN JINIA</h2>
+                    </div>
+                    <hr >
+                    <div style="margin-top: 15px;">
+                        <p style="font-size: 25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; list-style: square;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo soluta obcaecati, reprehenderit aliquid vel eum repudiandae possimus provident quis corrupti. Earum, porro! Laboriosam, a pariatur? Dolore cum adipisci hic optio dolor quisquam a eius doloremque voluptate et rem in labore sequi rerum quia, veniam voluptas modi! Rerum exercitationem quam beatae eveniet voluptate molestiae nisi, doloribus quidem labore perferendis. Reiciendis, assumenda dicta rem amet debitis facilis dignissimos consequuntur ab laudantium ex illum reprehenderit dolorem excepturi quidem aut esse nemo libero porro commodi? Vero est mollitia labore aliquam dolorum asperiores. Laborum et dicta rerum assumenda inventore ipsam cupiditate porro debitis. Rem?
+                        </p> 
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: space-evenly; margin-bottom: 100px; color: white; margin-top: 100px; ">
+        <div style="width: 250px; height: 250px; display: flex; flex-direction: column; justify-content: space-between;">
+            <img src="{% static "images/linkedin.png"%}" style="border-radius: 50%; width: 180px; height: 180px;" alt="Avatar">
+            <h1 style="padding-top: 30px;">LINKEDIN</h1>
+        </div>
+        <div style="width: 250px; height: 250px; display: flex; flex-direction: column; justify-content: space-between; ">
+            <img src="{% static "images/download.png"%}" style="border-radius: 50%; width: 180px; height: 180px; " alt="Avatar">
+            <h1 style="padding-left: 10px; padding-top: 30px;">GITHUB</h1>
+
+        </div>
+        <div style="width: 250px; height: 250px; display: flex; flex-direction: column; justify-content: space-between; object-position: center;">
+            <img src="{% static "images/instagram.png"%}" style="border-radius: 50%; width: 180px; height: 180px;" alt="Avatar">
+            <h1 style="padding-right: 50px; text-align: center; padding-top: 30px;">INSTAGRAM</h1>
+        </div>
+    </div>
+    <style>
+         section{
+            display: flex;
+            height: 700px;
+            justify-content: center;
+            align-content: center;
+            margin-bottom: 50px;
+         }
+
+         .image-hero{
+            height: 60%;
+            width:80%;
+         }
+         .image-hero img{
+            height: 100%;
+            width: 100%;
+            
+         }
+         img{
+                transition: box-shadow .3s;
+            }
+            img:hover{ 
+                box-shadow: 0 0 35px rgba(0,0,0,.6);
+        
+            }
+
+            .facts-container-2{
+                
+
+                background: rgb(255, 238, 205);
+                
+
+            }
+
+            .facts-container-1{
+
+                padding: 20px 48px;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                background-color: rgb(26, 24, 24);
+            }
+
+            .facts-container-image-1{
+                display: flex;
+                width: 100%;
+            }
+            .image-1{
+                position: relative;
+                padding: 2%;
+            }
+            .text-1{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding: 2%;
+                padding-bottom: 1.3%;
+                object-position: center;
+            }
+            .fact-1-header{
+                margin-bottom: 2%;
+            }
+        
+
+    </style>
+    <script>
+        
+    </script>
+
 
 {% endblock content %}
 
