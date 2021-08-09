@@ -7,23 +7,44 @@
             <img  src="{% static "images/LA model 2.jpg"%}">
         </div>
     </section>
-    <div style="margin-top: 100px; margin-bottom: 100px;">
-        <h1 style="padding-left:20px ;align-content: center;text-align: center;color: rgb(240, 235, 235);font-style: normal; font-family:sans-serif; font-weight: 900;font-stretch: wider; word-spacing: 2px; ;letter-spacing: 3px ; font-size: 45px;object-position: center;">
-          PROJECTS</h1>
+    <!-- <div style="margin-top: 100px; margin-bottom: 120px;">
+        <h1 style="text-decoration: underline;text-underline-offset: 25px;  padding-left:20px ;align-content: center;text-align: center;color: rgb(240, 235, 235);font-style: normal; font-family:sans-serif; font-weight: 900;font-stretch: wider; word-spacing: 2px; ;letter-spacing: 3px ; font-size: 45px;object-position: center;">
+          PAGES</h1>
         <hr>
     </div> 
-    <div style="display: flex; justify-content: space-evenly; margin-bottom: 100px; color: white;">
-        <div style="width: 500px; height: 500px; display: flex; flex-direction: column; justify-content: space-between;">
-            <img src="{% static "images/projects.jpg"%}" style=" width: 500px; height: 500px;" alt="Avatar">
+    <div class="container-fluid">
+        <div class="row mx-auto" style="margin-bottom: 120px;">
+            <div class="mx-auto" style="display: flex; flex-direction: column;">
+                <h1 style="color:rgb(235, 229, 229); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:30px; font-weight: 600; padding-top: 15px; text-align: center; margin-bottom: 20px;">ART PAGE</h1>
+                <div class="card mx-auto" >
+                    <img src="{% static "images/projects.jpg"%}" class="card__image ">
+                    <div class="card__overlay">
+                        <div class="overlay__text" >
+                            <a href="{% url 'artpage' %}" class="btn btn-outline-dark " style="letter-spacing: 2.5px; font-weight: 700; font-size: 25px; padding-left: 100px; padding-right: 100px; padding-top: 20px; padding-bottom: 20px;">ART </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mx-auto" style="display: flex; flex-direction: column;" >
+                <h1 style="color:rgb(235, 229, 229); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:30px; font-weight: 600; padding-top: 15px; text-align: center; margin-bottom: 20px;">CONTACT PAGE</h1>
+                <div class="card mx-auto" >
+                    <img src="{% static "images/about.jpg"%}" class="card__image">
+                    <div class="card__overlay">
+                      <div class="overlay__text" >
+                        <a href="" class="btn btn-outline-dark " style="letter-spacing: 2.5px; font-weight: 700; font-size: 25px; padding-left: 100px; padding-right: 100px; padding-top: 20px; padding-bottom: 20px;">CONTACT</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        <div style="width: 500px; height: 500px; display: flex; flex-direction: column; justify-content: space-between; ">
-            <img src="{% static "images/about.jpg"%}" style=" width: 500px; height: 500px; " alt="Avatar">
-        </div>
-    </div>
+    </div> -->
     
-    <div>
-        <h1 style="padding-left:20px ;align-content: center;text-align: center;color: rgb(240, 235, 235);font-style: normal; font-family:sans-serif; font-weight: 900;font-stretch: wider; word-spacing: 2px; ;letter-spacing: 3px ; font-size: 45px;object-position: center;">
-        </h1>
+    
+    <div style="margin-bottom: 70px; margin-top: 50px;">
+        <h1 style="text-decoration: underline;text-underline-offset: 25px; padding-left:20px ;align-content: center;text-align: center;color: rgb(240, 235, 235);font-style: normal; font-family:sans-serif; font-weight: 900;font-stretch: wider; word-spacing: 2px; ;letter-spacing: 3px ; font-size: 45px;object-position: center;">
+        ABOUT ME</h1>
      <hr>
     </div>
     
@@ -50,7 +71,10 @@
             </div>
         </div>
     </div>
-    <div style="display: flex; justify-content: space-evenly; margin-bottom: 100px; color: white; margin-top: 100px; ">
+    <h1 style="text-decoration: underline;text-underline-offset: 25px; padding-left:20px ;align-content: center;text-align: center;color: rgb(240, 235, 235);font-style: normal; font-family:sans-serif; font-weight: 900;font-stretch: wider; word-spacing: 2px; ;letter-spacing: 3px ; font-size: 45px;object-position: center;">
+        SOCIALS</h1>
+      <hr>
+    <div class="socials" style="display: flex; justify-content: space-evenly; margin-bottom: 100px; ; margin-top: 100px; color: white;">
         <div style="width: 250px; height: 250px; display: flex; flex-direction: column; justify-content: space-between;">
             <img src="{% static "images/linkedin.png"%}" style="border-radius: 50%; width: 180px; height: 180px;" alt="Avatar">
             <h1 style="padding-top: 30px;">LINKEDIN</h1>
@@ -66,6 +90,13 @@
         </div>
     </div>
     <style>
+         .page1:hover{
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../static/images/projects.jpg);
+        }
+         .page2:hover{
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../static/images/about.jpg);
+        }
+
          section{
             display: flex;
             height: 700px;
@@ -126,7 +157,62 @@
             .fact-1-header{
                 margin-bottom: 2%;
             }
-        
+            
+            .card {
+            position: relative;
+            transition: all .5s ease-in;
+            }
+
+
+            .card__image {
+            display: block;
+            width: 500px;
+            height: 500px;
+            }
+
+            .card__overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 500px;
+            width: 500px;
+            opacity: 0;
+            visibility: none;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            .card:hover .card__overlay {
+            opacity: 1;
+            }
+
+            .overlay__text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+            @media (max-width:900px) {
+                .cards{
+                    opacity:0 ;
+                }
+                .facts-container-1{
+                    opacity: 0;
+                }
+                .socials{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+
+            }
 
     </style>
     <script>

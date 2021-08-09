@@ -8,7 +8,7 @@ tl.fromTo(
         {height:"100%", ease:Power2.easeInOut}
     ).fromTo(
         hero,
-        1.2,
+        1,
         {width:"100%"},
         {width:"95%", ease:Power2.easeInOut}
     );
